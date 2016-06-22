@@ -1,0 +1,174 @@
+/* Survey page styles */
+/*********** LINKS ***********/
+
+
+.photo{
+  width: 60%;
+  padding: 10px;
+}
+
+form {
+  margin: 10px auto 0;
+  text-align: left;
+  display: inline-block;
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.heading {
+    margin: 40px 0 0;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #2d2b30;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    color: #fff;
+    padding-left: 8px;
+    border: none;
+    border-bottom: solid thin #ccc;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 100%;
+    background-color: #444;
+    height: 30px;
+    border-radius: 4px;
+    -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition:         all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    background-color: #4b7b4b;
+    outline: none;
+    padding: 10px;
+    width: 90%;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .85em;
+    font-weight: 300;
+    border-radius:15px;
+    overflow: hidden;
+}
+input[type="radio"]~label {
+    font-size: 1.2em;
+}
+input[type="radio"] {
+    height: 15px;
+    width: 15px;
+}
+.container{
+  text-align: center;
+    background: #fff;
+    margin-top: 20px;
+}
+.newsletter{
+    
+}
+legend {
+    margin-bottom: 24px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+fieldset{
+    margin-bottom: 14px;
+    border: solid 6px;
+}
+input~p {
+    padding: 3px;
+    margin-top: 0;
+    opacity: 0;
+    color: red;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+#hint {
+    position: absolute;
+}
+input:focus + #nameHint,
+input:focus + #emailHint,
+input:focus + #email2Hint,
+input:focus + #hint {
+    opacity: 1;
+    position: relative;
+}
+input[type="submit"] {
+    width: 100%;
+}
+/* Footer Style */
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .8;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+a.twitter {
+  background-image: url(../img/twitter-32.png);
+}
+
+a.youtube {
+  background-image: url(../img/youtube-32.png);
+}
+
+a.spotify {
+  background-image: url(../img/spotify-32.png);
+}
+
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .photo{
+    width: 40%;
+  }
+    
+    .container {
+        padding: 20px;
+    }
+}

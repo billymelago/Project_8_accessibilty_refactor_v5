@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <link href="css/styles.css" rel="stylesheet" type="text/css" />
+      <link href="css/tour.css" rel="stylesheet" type="text/css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+      <title>Accessible Frog - Tour Dates</title>
+  </head>
+
+  <body>
+    <p class="hide">
+        <a href="#main-content">Skip to main content</a>  
+    </p>
+    <nav role="navigation" class="main-nav">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="#">Tour</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+
+    <header role="banner">
+        <div class="banner">
+            <p class="tag">Accessible Frog</p>
+            <p class="tagline">we make awesome music</p>
+        </div> 
+    </header>
+
+    <main role="main" id="main-content">
+      <div class="card">
+        <div class="flex">
+            <h1 class="hide hh">Accessible Frog - Tour Dates</h1>  
+            <table>
+                <caption>
+                  <h2 class="heading">Tour Dates</h2>
+                </caption>
+                <thead>
+                    <tr class="tHead">
+                      <th scope="col" id="date">Date</th>
+                      <th scope="col" id="venue">Venue</th>
+                      <th scope="col" id="location">Location</th>   
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <th scope="row" id="march1012" headers="date"><div>March</div> <div>10-12</div></th>
+                        <td headers="march1012"><a href="http://www.thewarfieldtheatre.com" target="_blank" title="Theatre Info">The Warfield</a></td>
+                        <td headers="march1012">San Francisco, CA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="march2023" headers="date"><div>March</div> <div>20-23</div></th>
+                        <td headers="march2023"><a href="http://www.pepsicenter.com" target="_blank" title="Center Info">Pepsi Center </a></td>
+                        <td headers="march2023">Denver, CO</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="april24" headers="date"><div>April</div> <div>2-4</div></th>
+                        <td headers="april24"><a href="http://www.beacontheatre.com" target="_blank" title="Theatre Info">Beacon Theatre</a></td>
+                        <td headers="april24">New York City, NY</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="april10" headers="date"><div>April</div> <div>10</div></th>
+                        <td headers="april10"><a href="http://www.stgpresents.org/paramount/" target="_blank" title="Theatre Info">Paramount Theatre</a></td>
+                        <td headers="april10">Seattle, WA</td>
+                    </tr>
+                </tbody> 
+                
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><a href="#">Tickets avalible at Ticket-Frog.com</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+      </div>
+    </main>
+    
+    <footer role="contentinfo">
+      <ul>
+         <li><a href="#" class="social twitter" title="Twitter">Check out our latest Tweets.</a></li>
+        <li><a href="#" class="social youtube" title="YouTube"
+               >Check our YouTube channel for music videos.</a></li>
+        <li><a href="#" class="social spotify" title="Spotify">Listen to us on Spotify.</a></li>
+      </ul>
+      <p class="copyright">Copyright 2015, Accessible Frog</p>
+    </footer>       
+  </body>
+</html>

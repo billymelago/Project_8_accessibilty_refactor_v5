@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/survey.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <title>Accessible Frog - Survey</title>
+  </head>
+
+  <body>
+    <p class="hide">
+        <a href="#main-content">Skip to main content</a>  
+    </p>
+    <nav role="navigation" class="main-nav">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </nav>
+
+    <header role="banner">
+        <div class="banner">
+            <p class="tag">Accessible Frog</p>
+            <p class="tagline">we make awesome music</p>
+        </div> 
+    </header>
+
+    <main role="main" id="main-content">
+        <h1 class="hide hh">Accessible Frog - Survey</h1> 
+        <h2 class= "heading">Survey</h2>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/concert01.jpg" alt="">
+          <div class="container">
+            <form class = "survey">
+                <fieldset>
+                <legend>Who is your favorite band member:</legend>
+                  <input type="radio" id="John" name="res" value="John"> 
+                    <label for="John">John</label>
+                  <input type="radio" id="Hazzard" name="res" value="Hazzard">
+                    <label for="Hazzard">Hazzard</label>
+                  <input type="radio" id="Bob" name="res" value="Bob">
+                    <label for="Bob">Bob</label>
+                  <input type="radio" id="Sally" name="res" value="Sally">
+                    <label for="Sally">Sally</label>
+                </fieldset>
+                <fieldset>
+                <legend>Album Name:</legend>
+                    <label for="albums">Type Your Favorite Album:</br>
+                        <datalist id="select">    
+                            <select id="albums" name="select">
+                                <option value="A Day Of Old">A Day Of Old</option>
+                                <option value="Diamond Fireworks">Diamond Fireworks</option>
+                                <option value="Enjoy Your Desire">Enjoy Your Desire</option>
+                                <option value="Finding My Shadow">Finding My Shadow</option>
+                                <option value="Heroic Forever">Heroic Forever</option>
+                                <option value="Midnight Fires">Midnight Fires</option>
+                                <option value="Music Of My Life">Music Of My Life</option>
+                                <option value="Party For An Angel">Party For An Angel</option>
+                                <option value="Song For Yesterday">Song For Yesterday</option>
+                                <option value="Street Of The Rider">Street Of The Rider</option>
+                                <option value="This Is For You">This Is For You</option>
+                            </select>
+                            If other, please specify:
+                        </datalist>
+                        <input type="text" name="albumName" list="select">
+                    </label></br>
+                </fieldset>
+                <fieldset>
+                    <legend>What is your favorite song:</legend>    
+                    <label for="song">Write your favorite here:</label></br>
+                  <textarea id="song" name="favSong"></textarea>
+                </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <h2 class= "heading">Newsletter</h2>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/the_band.jpg" alt="">
+            <div class="container">
+              <form class="newsletter">
+                    <fieldset>
+                        <legend>Sign Up for Updates:</legend>
+                        <label for="name">Name:</label>
+                        <input type ="text" id="name" name="textfield" required aria-describedby="nameHint">
+                        <p id="nameHint">What should we call you?</p>
+                  
+                        <label for="email">Email:</label>
+                        <input type ="email" id="email" name="textfield" required aria-describedby="emailHint">
+                        <p id="emailHint">Where should we send the info?</p>
+                
+                        <label for="email2">Retype Email:</label>
+                        <input type ="email" id="email2" name="textfield" aria-describedby="email2Hint">
+                        <p id="email2Hint">We just want to make sure they match.</p>
+            
+                        <label for="password">Choose a password</label>
+                        <input type="password" id="password" aria-describedby="hint">
+                        <p id="hint">Your password must be at least 10 characters in length. It must contain a mixture of upper and lower case letters, numbers and punctuation marks.</p>
+                    </fieldset>
+                  <input type="submit" name="submit" value="Sign Up" aria-label="Submit">
+              </form>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <ul>
+        <li><a href="#" class="social twitter" title="Check out our latest Tweets."></a></li>
+        <li><a href="#" class="social youtube" title="Check our YouTube channel for music videos."></a></li>
+        <li><a href="#" class="social spotify" title="Listen to us on Spotify."></a></li>
+      </ul>
+      <p class="copyright">Copyright 2015, Accessible Frog</p>
+    </footer>
+  </body>
+</html>
