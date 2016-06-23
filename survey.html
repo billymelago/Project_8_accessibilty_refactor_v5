@@ -34,7 +34,7 @@
         <h2 class= "heading">Survey</h2>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/concert01.jpg" alt="">
+          <img class="photo" src= "img/concert01.jpg" alt="Concert photo of fans">
           <div class="container">
             <form class = "survey">
                 <fieldset>
@@ -50,9 +50,9 @@
                 </fieldset>
                 <fieldset>
                 <legend>Album Name:</legend>
-                    <label for="albums">Type Your Favorite Album:</br>
+                    
                         <datalist id="select">    
-                            <select id="albums" name="select">
+                            <select      name="select">
                                 <option value="A Day Of Old">A Day Of Old</option>
                                 <option value="Diamond Fireworks">Diamond Fireworks</option>
                                 <option value="Enjoy Your Desire">Enjoy Your Desire</option>
@@ -67,12 +67,13 @@
                             </select>
                             If other, please specify:
                         </datalist>
-                        <input type="text" name="albumName" list="select">
-                    </label></br>
+                    <label for="albums">Type Your Favorite Album:</label>
+                        <input id="albums" type="text" name="albumName" list="select">
+                    
                 </fieldset>
                 <fieldset>
                     <legend>What is your favorite song:</legend>    
-                    <label for="song">Write your favorite here:</label></br>
+                    <label for="song">Write your favorite here:</label>
                   <textarea id="song" name="favSong"></textarea>
                 </fieldset>
             </form>
@@ -82,7 +83,7 @@
       <h2 class= "heading">Newsletter</h2>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/the_band.jpg" alt="">
+          <img class="photo" src= "img/the_band.jpg" alt="Concert photo of band">
             <div class="container">
               <form class="newsletter">
                     <fieldset>
@@ -112,9 +113,10 @@
 
     <footer role="contentinfo">
       <ul>
-        <li><a href="#" class="social twitter" title="Check out our latest Tweets."></a></li>
-        <li><a href="#" class="social youtube" title="Check our YouTube channel for music videos."></a></li>
-        <li><a href="#" class="social spotify" title="Listen to us on Spotify."></a></li>
+        <li><a href="#" class="social twitter">Check out our latest Tweets.</a></li>
+        <li><a href="#" class="social youtube"
+               >Check our YouTube channel for music videos.</a></li>
+        <li><a href="#" class="social spotify">Listen to us on Spotify.</a></li>
       </ul>
       <p class="copyright">Copyright 2015, Accessible Frog</p>
     </footer>

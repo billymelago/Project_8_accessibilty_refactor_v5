@@ -64,6 +64,17 @@ select:focus {
     border-radius:15px;
     overflow: hidden;
 }
+input[type="submit"] {
+    background-color: #4b7b4b;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 input[type="radio"]~label {
     font-size: 1.2em;
 }

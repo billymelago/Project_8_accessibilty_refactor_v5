@@ -76,6 +76,7 @@ td a:hover,
 td a:focus {
     color: #000;
     font-weight: 700;
+    border-bottom: none;
 }
 tfoot a {
     color: #fff;
