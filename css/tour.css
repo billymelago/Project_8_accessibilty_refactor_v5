@@ -77,15 +77,18 @@ td a:focus {
     color: #000;
     font-weight: 700;
     border-bottom: none;
-}
-tfoot a {
+}       
+.tix {
     color: #fff;
+    letter-spacing: 1.5px;
 }
-
 tr:hover:not(.tHead),
-tr:focus:not(.tHead) {
+tr:hover:not(.tfoot) {
     color: #2d2b30;
     background-color: #98fb98;
+}
+.tix:focus {
+    background: #98fb98;    
 }
 td:nth-child(3) {
     padding-left: 10px;

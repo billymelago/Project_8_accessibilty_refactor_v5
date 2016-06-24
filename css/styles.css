@@ -126,7 +126,8 @@ header {
         position: static;
         width: auto;
         height: auto;
-        color: #2d2b30;
+        color: #000;
+        background: #fff;
         overflow: visible;  
     }
 .banner {
@@ -286,12 +287,14 @@ footer {
 footer .copyright {
   top: -8px;
   font-size: .75em;
+    color:#3c643c; 
 }
 
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+    
 }
 
 footer ul li {
@@ -316,15 +319,15 @@ a.social {
 }
 
 a.twitter {
-  background: #4b7b4b url(../img/twitter-32.png) center;
+  background: #2d2b30 url(../img/twitter-32.png) center;
 }
 
 a.youtube {
-  background:#4b7b4b url(../img/youtube-32.png) center;
+  background:#2d2b30 url(../img/youtube-32.png) center;
 }
 
 a.spotify {
-  background:#4b7b4b url(../img/spotify-32.png) center;
+  background:#2d2b30 url(../img/spotify-32.png) center;
 }
 
 a.social:hover,
