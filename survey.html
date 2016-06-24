@@ -50,9 +50,9 @@
                 </fieldset>
                 <fieldset>
                 <legend>Album Name:</legend>
-                    
-                        <datalist id="select">    
-                            <select      name="select">
+                    <label for="albums">Type Your Favorite Album:</label>
+                        <input id="albums" type="text" name="albumName" list="select">
+                        <datalist id="select">
                                 <option value="A Day Of Old">A Day Of Old</option>
                                 <option value="Diamond Fireworks">Diamond Fireworks</option>
                                 <option value="Enjoy Your Desire">Enjoy Your Desire</option>
@@ -64,12 +64,9 @@
                                 <option value="Song For Yesterday">Song For Yesterday</option>
                                 <option value="Street Of The Rider">Street Of The Rider</option>
                                 <option value="This Is For You">This Is For You</option>
-                            </select>
+                            
                             If other, please specify:
                         </datalist>
-                    <label for="albums">Type Your Favorite Album:</label>
-                        <input id="albums" type="text" name="albumName" list="select">
-                    
                 </fieldset>
                 <fieldset>
                     <legend>What is your favorite song:</legend>    
