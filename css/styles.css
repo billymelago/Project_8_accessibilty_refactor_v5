@@ -105,7 +105,8 @@ header {
 
     .hide {
         padding: 0;
-        margin: 0;  
+        margin: 0;
+        color: #fff;
     }
     .hh {
         position: absolute;
@@ -120,6 +121,7 @@ header {
         left: -1000px;
         height: 1px;
         width: 1px;
+        color: blue;
         overflow: hidden;
     }
     .hide a:focus {
